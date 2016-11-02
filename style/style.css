@@ -29,7 +29,7 @@ body {
     text-align: left !important;
 }
 
-.table td {
+.table td, th {
     border: 1px solid #d8d8d8;
     border-left: none;
     border-right: none;
