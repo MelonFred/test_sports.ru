@@ -20,5 +20,3 @@ $(function(){
             $('#description').append('<b>М</b>&nbsp;–&nbsp;матчи, <b>В</b>&nbsp;–&nbsp;выигрыши, <b>Н</b>&nbsp;–&nbsp;ничьи, <b>П</b>&nbsp;–&nbsp;поражения, <b>Заб</b>&nbsp;–&nbsp;забитые голы, <b>Проп</b>&nbsp;–&nbsp;пропущенные голы, <b>О</b>&nbsp;–&nbsp;очки в турнире');
     });
 });
-
-
