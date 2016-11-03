@@ -40,6 +40,9 @@ body {
 
 .name {
     padding-left: 10px;  
+}
+
+.minWidth {
     min-width: 150px;
 }
 

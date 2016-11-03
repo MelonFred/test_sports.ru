@@ -7,7 +7,7 @@ $(function(){
             for (var i = 0; i < data.teams.length; i++){
                 $('#stats').append(
                 '<tr><td class="borderR ' + (data.teams[i].color ? color + data.teams[i].color : "") + '">' + data.teams[i].place + 
-                '</td><td class="alignLeft borderR" ><div class="name"><i class="flag flag-ita" title="' + data.teams[i].flag_country + ' "></i><a class="name" href="' + data.teams[i].tag_url + '" title="' + data.teams[i].name + '">' + data.teams[i].name +
+                '</td><td class="alignLeft borderR minWidth" ><div class="name"><i class="flag flag-ita" title="' + data.teams[i].flag_country + ' "></i><a class="name" href="' + data.teams[i].tag_url + '" title="' + data.teams[i].name + '">' + data.teams[i].name +
                 '</a></div></td><td>' + data.teams[i].matches + 
                 '</td><td>' + data.teams[i].win + 
                 '</td><td>' + data.teams[i].draw + 
