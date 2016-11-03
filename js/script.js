@@ -2,8 +2,8 @@ $(function(){
     $.getJSON('js/seriea.json', function(data) {
 
             var color = "color";
-            $('#statsTable').append(
-                '<colgroup><col width="34"><col width=""><col width="50"><col width="45"><col width="45"><col width="45"><col width="40"><col width="45"><col width="50"></colgroup><thead><tr><td>&nbsp;</td><th data-type="string" class="alignLeft name headFaL borderR">Команда</th><th data-type="number" class="tabHead" title="Матчи">М</th><th data-type="number" class="tabHead" title="Выигрыши">В</th><th data-type="number" class="tabHead" title="Ничьи">Н</th><th data-type="number" class="tabHead" title="Проигрыши">П</th><th data-type="number" class="tabHead" title="Забитые голы">Заб</th><th data-type="number" class="tabHead" title="Пропущенные голы">Проп</th><th data-type="number" class="headFaL backgLast" title="Очки">О</th></th></thead><tbody id="stats"></tbody>');
+            $('#seriea').append(
+                '<table id="statsTable" class="table"><colgroup><col width="34"><col width=""><col width="50"><col width="45"><col width="45"><col width="45"><col width="40"><col width="45"><col width="50"></colgroup><thead><tr><td>&nbsp;</td><th data-type="string" class="alignLeft name headFaL borderR">Команда</th><th data-type="number" class="tabHead" title="Матчи">М</th><th data-type="number" class="tabHead" title="Выигрыши">В</th><th data-type="number" class="tabHead" title="Ничьи">Н</th><th data-type="number" class="tabHead" title="Проигрыши">П</th><th data-type="number" class="tabHead" title="Забитые голы">Заб</th><th data-type="number" class="tabHead" title="Пропущенные голы">Проп</th><th data-type="number" class="headFaL backgLast" title="Очки">О</th></th></thead><tbody id="stats"></tbody></table>');
             for (var i = 0; i < data.teams.length; i++){
                 $('#stats').append(
                 '<tr><td class="borderR ' + (data.teams[i].color ? color + data.teams[i].color : "") + '">' + data.teams[i].place + 

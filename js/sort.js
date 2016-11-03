@@ -1,7 +1,7 @@
-    var table = document.getElementById('statsTable');
+    var div = document.getElementById('seriea');
     var prevName;
 
-    table.onclick = function(e) {
+    div.onclick = function(e) {
       if (e.target.tagName != 'TH') return;
       
       else if (e.target == prevName) {
@@ -16,6 +16,8 @@
     };
 
     function sortTable(colNum, type) {
+
+      var table = document.getElementById('statsTable');
       
       var tbody = table.getElementsByTagName('tbody')[0];
       
@@ -49,6 +51,9 @@
     }
 
     function sortTableBack(colNum, type) {
+
+      var table = document.getElementById('statsTable');
+      
       var tbody = table.getElementsByTagName('tbody')[0];
 
       var rowsArray = [].slice.call(tbody.rows);
