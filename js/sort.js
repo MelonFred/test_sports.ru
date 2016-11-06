@@ -7,12 +7,12 @@
       else if (e.target == prevName) {
           
           prevName = "";
-          sortTable(e.target.cellIndex, e.target.getAttribute('data-type'), "decrease");
+          sortTable(e.target.cellIndex, e.target.getAttribute('data-type'), "DESC");
           return;
       } 
 
       prevName = e.target;   
-      sortTable(e.target.cellIndex, e.target.getAttribute('data-type'), "increase");
+      sortTable(e.target.cellIndex, e.target.getAttribute('data-type'), "ASC");
     };
 
     function sortTable(colNum, type, direction) {
@@ -25,7 +25,7 @@
 
       var compare;
       switch (direction) {
-        case "decrease": switch (type) {
+        case "DESC": switch (type) {
                            case "number":
                              compare = function(rowA, rowB) {
                                return rowB.cells[colNum].innerHTML - rowA.cells[colNum].innerHTML;
@@ -38,7 +38,7 @@
                            break;
                          }
         break;
-        case "increase": switch (type) {
+        case "ASC": switch (type) {
                            case "number":
                              compare = function(rowA, rowB) {
                                return rowA.cells[colNum].innerHTML - rowB.cells[colNum].innerHTML;
